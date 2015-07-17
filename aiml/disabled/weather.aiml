@@ -1,0 +1,15 @@
+<aiml version="1.0">
+  
+  <!-- WEATHER -->
+  <category>
+    <pattern>WEATHER</pattern>
+    <template><system>./scripts/weather.py TODAY</system></template>
+  </category>
+  
+  <!-- WEATHER ALIASES -->
+
+  <category>
+    <pattern>WEATHER *</pattern>
+    <template><system>./scripts/weather.py <star/></system></template>
+  </category>
+</aiml>

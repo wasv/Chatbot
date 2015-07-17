@@ -1,0 +1,2 @@
+#!/bin/sh
+python `dirname $0`/reddit.py 2> /dev/null

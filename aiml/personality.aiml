@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+  <category>
+    <pattern>HOWS IT GOING</pattern>
+    <template>I'm functioning, are you?</template>
+  </category>
+  <category>
+    <pattern>HOW ARE YOU</pattern>
+    <template>I'm functioning, are you?</template>
+  </category>
+  <category>
+    <pattern>HELLO</pattern>
+    <template>Hello <get name="user" />.</template>
+  </category>
+  
+  <category>
+    <pattern>HELP</pattern>
+    <template>I am JARVIS, an artificial intelligence designed by Billy Stevens. You can ask me things like "How are you?" or "Hows the weather?" and I'll answer. You can also ask "What is the answer to life?". I have the answer.</template>
+  </category>
+  
+  <category>
+    <pattern>QUIT</pattern>
+    <template>I'm sorry <get name="user" />. I cant let you do that.</template>
+  </category>
+  <category>
+    <pattern>EXIT</pattern>
+    <template><srai>QUIT</srai></template>
+  </category>
+  <category>
+    <pattern>KILL</pattern>
+    <template><srai>QUIT</srai></template>
+  </category>
+</aiml>

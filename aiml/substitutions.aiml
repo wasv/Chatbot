@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+  <category>
+    <pattern>* TODAY</pattern>
+    <template><sr /></template>
+  </category>
+  <category>
+    <pattern>HOWS THE *</pattern>
+    <template><sr /></template>
+  </category>
+  <category>
+    <pattern><bot name="name" /> *</pattern>
+    <template><sr /></template>
+  </category>
+  <category>
+    <pattern>* <bot name="name" /></pattern>
+    <template><sr /></template>
+  </category>
+  <category>
+    <pattern>IT IS *</pattern>
+    <template><condition name="topic"><li value="name"><srai>NAME<star /></srai></li><li>What is 'it'?</li></condition></template>
+  </category>
+  <category>
+    <pattern>WAHTS *</pattern>
+    <template><srai>WHATS <star /></srai></template>
+  </category>
+  <category>
+    <pattern>WHAST *</pattern>
+    <template><srai>WHATS <star /></srai></template>
+  </category>
+  <category>
+    <pattern>HOW IS *</pattern>
+    <template><srai>HOWS <star /></srai></template>
+  </category>
+  <category>
+    <pattern>WHAT IS *</pattern>
+    <template><srai>WHATS <star /></srai></template>
+  </category>
+  <category>
+    <pattern>ITS *</pattern>
+    <template><srai>IT IS <star /></srai></template>
+  </category>
+  <category>
+    <pattern>WHAT ABOUT *</pattern>
+    <template><condition name="topic"><li value="weather"><srai>WEATHER <star /></srai></li><li>What about <star /></li></condition></template>
+  </category>
+  <category>
+    <pattern>HOW ABOUT *</pattern>
+    <template><condition name="topic"><li value="weather"><srai>WEATHER <star /></srai></li><li>What about <star /></li></condition></template>
+  </category>
+</aiml>

@@ -1,0 +1,14 @@
+<aiml>
+  <!-- NAME -->
+  <category>
+    <pattern> NAME * </pattern>
+    <template>Well hello <set name="user"><star/></set>. Nice to meet you.</template>
+  </category>
+  
+  <!-- NAME ALIASES -->
+  <category>
+    <pattern> MY NAME IS *</pattern>
+    <template><srai>NAME <star /></srai></template>
+  </category>
+  
+</aiml>

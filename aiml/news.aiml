@@ -1,0 +1,36 @@
+<aiml version="1.0">
+  <!-- NEWS -->
+  <category>
+    <pattern>NEWS</pattern>
+    <template><system mode="sync">./scripts/reddit.py</system></template>
+  </category>
+  
+  <!-- NEWS ALIASES -->
+
+  
+  <category>
+    <pattern>WHATS ON REDDIT</pattern>
+    <template><srai>NEWS</srai></template>
+  </category>
+  
+  <category>
+    <pattern>WHATS ON REDDIT *</pattern>
+    <template><srai>NEWS <star /> </srai></template>
+  </category>
+  
+  <category>
+    <pattern>WHATS ON THE NEWS</pattern>
+    <template> <srai>NEWS <star/> </srai> </template>
+  </category>  
+    
+  <category>
+    <pattern>WHATS ON THE NEWS *</pattern>
+    <template> <srai>NEWS <star/> </srai> </template>
+  </category>  
+
+  <category>
+    <pattern>NEWS TOMORROW</pattern>
+    <template>I'm a computer, not a time machine you fool!</template>
+  </category>
+
+</aiml>

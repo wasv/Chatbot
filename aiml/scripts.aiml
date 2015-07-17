@@ -1,0 +1,27 @@
+<aiml version="1.0">
+
+  <!-- FORTUNE -->
+
+  <category>
+    <pattern>FORTUNE</pattern>
+    <template><system mode="sync"> fortune -s </system></template>
+  </category>
+
+  <category>
+    <pattern>WHATS MY FORTUNE</pattern>
+    <template><srai>FORTUNE</srai></template>
+  </category>
+
+  <!-- WIKIPEDIA -->
+  <category>
+    <pattern>WHATS *</pattern>
+    <template><system mode="sync"> python ./scripts/wiki.py <star /> </system></template>
+  </category>
+  
+  <!-- WORK IN PROGRESS -->
+  <category>
+    <pattern>WIP</pattern>
+    <template>I'm sorry <get name="user"/> I cant do that right now.</template>
+  </category>
+  
+</aiml>

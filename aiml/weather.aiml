@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+  <category>
+    <pattern>WHATS THE WEATHER</pattern>
+    <template><srai> WEATHER </srai></template>
+  </category>
+  <category>
+    <pattern>WHATS THE WEATHER *</pattern>
+    <template><srai> WEATHER <star/></srai></template>
+  </category>
+  <category>
+    <pattern>WEATHER</pattern>
+    <template><think><set name="topic">weather</set></think>
+<system>./scripts/weather.py TODAY</system></template>
+  </category>
+  <category>
+    <pattern>WEATHER TODAY</pattern>
+    <template><think><set name="topic">weather</set></think>
+<system>./scripts/weather.py TODAY</system></template>
+  </category>
+  <category>
+    <pattern>WEATHER TOMORROW</pattern>
+    <template><think><set name="topic">weather</set></think>
+<system>./scripts/weather.py TOMORROW</system></template>
+  </category>
+  <category>
+    <pattern>WEATHER MONDAY</pattern>
+    <template><think><set name="topic">weather</set></think>
+<system>./scripts/weather.py MONDAY</system></template>
+  </category>
+  <category>
+    <pattern>WEATHER TUESDAY</pattern>
+    <template><think><set name="topic">weather</set></think>
+<system>./scripts/weather.py TUESDAY</system></template>
+  </category>
+  <category>
+    <pattern>WEATHER WEDNESDAY</pattern>
+    <template><think><set name="topic">weather</set></think>
+<system>./scripts/weather.py WEDNESDAY</system></template>
+  </category>
+  <category>
+    <pattern>WEATHER THURSDAY</pattern>
+    <template><think><set name="topic">weather</set></think>
+<system>./scripts/weather.py THURSDAY</system></template>
+  </category>
+  <category>
+    <pattern>WEATHER FRIDAY</pattern>
+    <template><think><set name="topic">weather</set></think>
+<system>./scripts/weather.py FRIDAY</system></template>
+  </category>
+  <category>
+    <pattern>WEATHER SATURDAY</pattern>
+    <template><think><set name="topic">weather</set></think>
+<system>./scripts/weather.py SATURDAY</system></template>
+  </category>
+  <category>
+    <pattern>WEATHER SUNDAY</pattern>
+    <template><think><set name="topic">weather</set></think>
+<system>./scripts/weather.py SUNDAY</system></template>
+  </category>
+</aiml>

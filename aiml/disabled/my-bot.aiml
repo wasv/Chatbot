@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+  <category>
+    <pattern>WELCOME</pattern>
+    <template>Hello <get name="user" />. Welcome back!</template>
+  </category>
+  <category>
+    <pattern>RELOAD</pattern>
+    <template>
+        <condition name="secure">
+            <li value="yes">
+                <learn>*.aiml</learn>
+                Hello <get name="user" />. Welcome back!
+            </li>
+            <li> Invalid Permissions! </li>
+        </condition>
+    </template>
+  </category>
+  <category>
+    <pattern>TESTING *</pattern>
+    <template><srai>TEST SYSTEM TAG <star /></srai></template>
+  </category>
+  <category>
+    <pattern>TEST SYSTEM TAG `*`</pattern>
+    <template><bot name="name" /> says: NICE TRY</template>
+  </category>
+  <category>
+    <pattern>TEST SYSTEM TAG *</pattern>
+    <template><bot name="name" /> says: <star />, a'ite?</template>
+  </category>
+</aiml>
